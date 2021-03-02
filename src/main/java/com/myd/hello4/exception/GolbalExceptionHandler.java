@@ -42,6 +42,6 @@ public class GolbalExceptionHandler {
     @ExceptionHandler(RRException.class)
     public R apiException(RRException ex){
         log.error("apiException 异常抛出：{}", ex);
-        return R.fail(ex);
+        return R.error();
     }
 }
