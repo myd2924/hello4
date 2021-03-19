@@ -12,7 +12,6 @@ import java.io.Serializable;
  * @Description: 全系统返回格式
  */
 @Data
-@Builder
 public class Result<T> implements Serializable{
     private static final long serialVersionUID = -4899657898007859361L;
 

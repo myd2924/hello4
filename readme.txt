@@ -14,3 +14,5 @@
 5、通配符T与占位符?
 
 6、读取属性文件==方式有很多
+
+7、BeanFactoryPostProcessor、BeanPostProcessor的使用
