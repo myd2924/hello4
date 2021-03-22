@@ -16,3 +16,5 @@
 6、读取属性文件==方式有很多
 
 7、BeanFactoryPostProcessor、BeanPostProcessor的使用
+
+8、ImportBeanDefinitionRegistrar动态的创建bean到spring中
