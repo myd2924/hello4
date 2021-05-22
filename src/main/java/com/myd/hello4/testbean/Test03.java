@@ -6,5 +6,9 @@ package com.myd.hello4.testbean;
  * @Date:2021/3/22 14:22
  * @Description:
  */
-public class Test03 {
+public class Test03 implements InterTest{
+    @Override
+    public void print(){
+        System.out.println("打印一段文字");
+    }
 }
