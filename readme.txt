@@ -18,5 +18,3 @@
 7、BeanFactoryPostProcessor、BeanPostProcessor的使用
 
 8、ImportBeanDefinitionRegistrar动态的创建bean到spring中
-
-9、手写一个事件
