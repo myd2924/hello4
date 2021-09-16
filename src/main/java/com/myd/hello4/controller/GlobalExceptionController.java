@@ -21,7 +21,7 @@ public class GlobalExceptionController {
     @ExceptionHandler(RRException.class)
     public R RRExceptionHandler(HttpServletRequest request,RRException ex){
         System.out.println("==============》封装异常");
-        return R.error(ex.getCode(),ex.getMsg()+"封装一下");
+        return R.error(ex.getCode(),ex.getMsg());
     }
 
 }

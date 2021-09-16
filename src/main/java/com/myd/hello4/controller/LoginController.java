@@ -1,6 +1,8 @@
 package com.myd.hello4.controller;
 
 import com.myd.hello4.dto.User;
+import com.myd.hello4.exception.RRException;
+import com.myd.hello4.util.ParamsUtil;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,16 +23,18 @@ public class LoginController {
 
     @RequestMapping(value = "/login",consumes = "application/json")
     public String login(@Valid @RequestBody User user, BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
+        ParamsUtil.checkParm(bindingResult);
+        /*if(bindingResult.hasErrors()){
             List<ObjectError> allErrors = bindingResult.getAllErrors();
             StringBuilder sb = new StringBuilder();
             sb.append("error:");
             for(ObjectError error:allErrors){
                 sb.append("\n").append(error.getDefaultMessage());
             }
-            return sb.toString();
-        }
+            throw new RRException(sb.toString()) ;
+        }*/
 
         return "success";
     }
+
 }
